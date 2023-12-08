@@ -1,4 +1,5 @@
 module HaskellAssignment where
+import Data.List
 
 ------------------------------------------------
 -- findFirst
@@ -13,3 +14,4 @@ findFirst :: Eq a => (a -> Bool) -> [a] -> Found
 -- palindrome
 ------------------------------------------------
 palindrome :: [Char] -> Bool
+palindrome candidate = candidate == reverse (candidate)
