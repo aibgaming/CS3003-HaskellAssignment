@@ -9,6 +9,11 @@ instance Show Found where
   show (Match index) = "Found match at " ++ show index
   show NoMatch = "No match found!"
 findFirst :: Eq a => (a -> Bool) -> [a] -> Found
+findFirst needle haystack = case (findIndex needle haystack) of
+  
+  Just index -> (Match index)
+  
+  Nothing -> (NoMatch)
 
 ------------------------------------------------
 -- palindrome
