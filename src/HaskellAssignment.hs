@@ -42,7 +42,7 @@ findFirst needle haystack = case (findIndex needle haystack) of
   -- if findIndex returns 'Nothing' then 'NoMatch'
   Nothing -> (NoMatch)
 
---maybe (NoMatch) (Match index) (findIndex needle haystack of)
+maybe (NoMatch) (Match index) (findIndex needle haystack of)
 
 
 ------------------------------------------------
