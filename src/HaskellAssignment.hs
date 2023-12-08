@@ -13,6 +13,7 @@ findFirst :: Eq a => (a -> Bool) -> [a] -> Found
 findFirst needle haystack = case (findIndex needle haystack) of
   Just index -> (Match index)
   Nothing -> (NoMatch)
+--maybe (NoMatch) (Match index) (findIndex needle haystack of)
 
 ------------------------------------------------
 -- palindrome
